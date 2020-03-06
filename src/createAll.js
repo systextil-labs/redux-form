@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import reducer from './reducer';
 import createReduxForm from './createReduxForm';
 import mapValues from './mapValues';
@@ -58,7 +59,7 @@ export default function createAll(isReactNative, React, connect) {
     getValues,
     initialize,
     initializeWithKey,
-    propTypes: createPropTypes(React),
+    propTypes: createPropTypes(PropTypes),
     reduxForm: createReduxForm(isReactNative, React, connect),
     reducer,
     removeArrayValue,
